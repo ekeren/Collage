@@ -18,6 +18,15 @@ Collage app, which allows to create awesome collage. With this app user can get 
 
 ##How to remove a flag
 
+The flag removal command has the following syntax
+```
+ -d,--disabled            is flag disabled
+ -e,--enabled             is flag enabled
+ -f,--flag <arg>          flag name
+ -i,--input-file <arg>    input file
+ -o,--output-file <arg>   output file (optional)
+```
+To remove the `container.sendFeedback` flag and replace it with the disabled vlaue, run the following command:
 ```
 /tools/flag-removal/flag-remover  -f container.sendFeedback --disabled -i /Users/ekeren/rollout-workspace/Collage/Collages/AboutViewController.swift -o /Users/ekeren/rollout-workspace/Collage/Collages/AboutViewController_disabled.swift
 ```
