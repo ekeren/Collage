@@ -26,8 +26,12 @@ The flag removal command has the following syntax
  -i,--input-file <arg>    input file
  -o,--output-file <arg>   output file (optional)
 ```
-To remove the `container.sendFeedback` flag and replace it with the disabled vlaue, run the following command:
+To remove the `container.sendFeedback` flag and replace it with the disabled value on the file `AboutViewController.swift`, run the following command:
 ```
-./tools/flag-removal/flag-remover  -f container.sendFeedback --disabled -i /Users/ekeren/rollout-workspace/Collage/Collages/AboutViewController.swift -o /Users/ekeren/rollout-workspace/Collage/Collages/AboutViewController_disabled.swift
+./tools/flag-removal/flag-remover  \
+  -f container.sendFeedback \
+  --disabled \
+  -i /Users/ekeren/rollout-workspace/Collage/Collages/AboutViewController.swift \
+  -o /Users/ekeren/rollout-workspace/Collage/Collages/AboutViewController.swift
 ```
 
