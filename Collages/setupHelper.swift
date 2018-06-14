@@ -35,7 +35,7 @@ class SetupHelper : NSObject{
     }
     @objc static func setupROX(options options2: ROXOptions){
 
-        ROX.register("", container: CollagesFlags.container)
+        ROX.register("", container: ROXFlags.container)
        
         
         

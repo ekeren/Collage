@@ -14,7 +14,7 @@ import ROX
 open class CollageViewController: CollageViewControllerBase{
     
     override open func addRightButtonItems() {
-        CollagesFlags.container.borderEditor.enabled({
+        ROXFlags.container.borderEditor.enabled({
             self.navigationItem.rightBarButtonItems = [self.addButton, self.moreButton];
         }) {
             self.navigationItem.rightBarButtonItems = [self.addButton];

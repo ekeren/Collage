@@ -21,14 +21,14 @@ class AboutViewController : AboutViewControllerBase{
         self.sendEvent("nice");
     }
     func sendEvent(_ eventName:String){
-        if CollagesFlags.container.eventWhiteList.value.components(separatedBy: ",").contains(eventName) {
+        if ROXFlags.container.eventWhiteList.value.components(separatedBy: ",").contains(eventName) {
             print("will send the event \(eventName)")
         }
     }
     override open func viewDidLoad() {
         super.viewDidLoad()
         
-        CollagesFlags.container.sendFeedbackForKiran.disabled {
+        ROXFlags.container.sendFeedbackForKiran.disabled {
             self.feedbackButton.isHidden = true
         }
         

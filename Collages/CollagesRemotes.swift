@@ -35,7 +35,7 @@ public class Container: NSObject, RoxContainer{
 
 
 @objc
-public class CollagesFlags: NSObject{
+public class ROXFlags: NSObject{
     
   
 
