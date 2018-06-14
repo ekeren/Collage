@@ -15,3 +15,10 @@ Collage app, which allows to create awesome collage. With this app user can get 
 |---|---|
 | ![](https://cloud.githubusercontent.com/assets/8221314/7955384/9ed4cc8a-09e0-11e5-897b-cca2273afe9a.gif)  |  ![](https://cloud.githubusercontent.com/assets/8221314/7955594/35188fe6-09e2-11e5-998d-63381f749a87.gif) |
 
+
+##How to remove a flag
+
+```
+/tools/flag-removal/flag-remover  -f container.sendFeedback --disabled -i /Users/ekeren/rollout-workspace/Collage/Collages/AboutViewController.swift -o /Users/ekeren/rollout-workspace/Collage/Collages/AboutViewController_disabled.swift
+```
+
