@@ -1,0 +1,9 @@
+{
+  "commitish" : "3.0.1",
+  "iOS" : [
+    {
+      "name" : "ROX",
+      "hash" : "110f737dec1a63371f2d4539a1b4121ff749cc16ca46168e0dda64ffb0718b2c"
+    }
+  ]
+}

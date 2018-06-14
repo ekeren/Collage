@@ -7,9 +7,11 @@
 //
 
 #import "ChangingBordersViewController.h"
+#import "Collages-Swift.h"
+#import <ROXCore/ROXCore.h>
 
 @interface ChangingBordersViewController ()
-
+@property (nonatomic, strong) UILabel *borderWidthLabel;
 @end
 
 @implementation ChangingBordersViewController
@@ -19,13 +21,13 @@
     self.preferredContentSize = CGSizeMake(200.0f, 300.0f);
     
     //----------------------------Border width label---------------------------
-    UILabel *borderWidthLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 200.0f, 30.0f)];
-    borderWidthLabel.text = @"Border width";
-    borderWidthLabel.textAlignment = NSTextAlignmentCenter;
-    [self.view addSubview:borderWidthLabel];
+    _borderWidthLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 200.0f, 30.0f)];
+    
+    _borderWidthLabel.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:_borderWidthLabel];
     
     //----------------------------Border width slider---------------------------
-    UISlider *borderWidthSlider = [[UISlider alloc] initWithFrame:CGRectMake(0, borderWidthLabel.frame.origin.y+20, 200.0f, 30.0f)];
+    UISlider *borderWidthSlider = [[UISlider alloc] initWithFrame:CGRectMake(0, _borderWidthLabel.frame.origin.y+20, 200.0f, 30.0f)];
     borderWidthSlider.maximumValue = 20;
     borderWidthSlider.minimumValue = 0;
     [borderWidthSlider addTarget:_delegate action:@selector(changeBordersWidth:) forControlEvents:UIControlEventValueChanged];
@@ -58,7 +60,7 @@
 
 -(void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
+    _borderWidthLabel.text = @"broder width";
 }
 
 @end

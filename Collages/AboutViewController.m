@@ -6,18 +6,18 @@
 //  Copyright (c) 2015 Ekaterina Belinskaya. All rights reserved.
 //
 
-#import "AboutViewController.h"
+#import "AboutViewControllerBase.h"
 
-@interface AboutViewController ()
+
+@interface AboutViewControllerBase ()
 @property (weak, nonatomic) IBOutlet UIImageView *logoImageView;
-@property (weak, nonatomic) IBOutlet UIButton *feedbackButton;
 @property (weak, nonatomic) IBOutlet UIView *logoFrameView;
 @property (weak, nonatomic) IBOutlet UILabel *signLabel;
 
 @end
 
 
-@implementation AboutViewController
+@implementation AboutViewControllerBase
 
 -(void) viewDidLoad{
     [super viewDidLoad];
@@ -26,6 +26,8 @@
     self.view.backgroundColor = mainBackgroundColor;
     _logoImageView.layer.masksToBounds = YES;
     _logoImageView.layer.cornerRadius = 15;
+        
+
     
 }
 

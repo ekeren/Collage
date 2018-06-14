@@ -7,7 +7,8 @@
 //
 
 #import "ButtonsViewController.h"
-
+#import "Collages-Swift.h"
+#import <ROXCore/ROXCore.h>
 @interface ButtonsViewController ()
 
 @end
@@ -18,12 +19,14 @@
     [super viewDidLoad];
     
     self.preferredContentSize = CGSizeMake(100.0f, 80.0f);
+    
+    
     //-------------------------------BORDERS-------------------------------
     UIButton *borderButton = [UIButton buttonWithType: UIButtonTypeSystem];//[[UIButton alloc] initWithFrame:CGRectMake(10, 10, 40, 30)];
     [borderButton addTarget:_delegate
                      action:@selector(showBordersPopover:)
            forControlEvents:UIControlEventTouchUpInside];
-    [borderButton setTitle:@"Borders" forState:UIControlStateNormal];
+    
     borderButton.frame = CGRectMake (0,0, 100.0f, 40.0f);
     [self.view addSubview:borderButton];
     [self drawLineWithStartX:0 StartY:40.0f EndX:100.0f EndY:40.0f];
