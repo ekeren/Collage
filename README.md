@@ -43,4 +43,5 @@ The `remove_flag.sh` is a wrapper on top of flag-remover that finds all candidat
  To remove `sendFeedback` flag and replace it with the `false` value from the entire project:
 ` ./tools/flag-removal/remove_flag.sh sendFeedback flase`
 
+This command also removes the flag defintion from the code
 
