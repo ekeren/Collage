@@ -27,43 +27,20 @@ class AboutViewController : AboutViewControllerBase{
     }
     override open func viewDidLoad() {
         super.viewDidLoad()
-        
-        ROXFlags.container.sendFeedbackForKiran.disabled {
-            self.feedbackButton.isHidden = true
+        ROXFlags.container.sendFeedback.disabled {
+            print("this is a disabled block that uses a syntax without parentheses")
         }
-        
-        
-        
-
-        
-        
-        
-        
-        
-        
-        
-
-        
-        
-        
-        
-        
-            
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-       
-    
-        
+        ROXFlags.container.sendFeedback.disabled ({
+            print("this is a disabled block that uses a syntax with parentheses")
+        })
+        ROXFlags.container.sendFeedback.enabled {
+            print("this is an enabled block that uses a syntax without parentheses")
+        }
+        ROXFlags.container.sendFeedback.enabled({
+            print("enabled code block inside a enabled/disabled functions that accepts 2 blocks")
+        }, disabled: {
+            print("disable code block inside a enabled/disabled functions that accepts 2 blocks")
+        })
     }
     
 }

@@ -24,7 +24,7 @@ public class Container: NSObject, RoxContainer{
     public let borderEditor = RoxFlag(withDefault: true)
     public let templateShortList = RoxFlag(withDefault: false, freeze: .none)
     public let instagramSupport = RoxFlag()
-    public let sendFeedbackForKiran = RoxFlag()
+    public let sendFeedback = RoxFlag()
     public let pricingPlan12 = RoxEnumVariant(Paying.Free)
     public let someTexts = RoxConfigurationString(defaultValue: "Hi")
     public let borderWidth = RoxConfigurationString(defaultValue: "Border width")
