@@ -35,3 +35,10 @@ To remove the `container.sendFeedback` flag and replace it with the disabled val
   -o /Users/ekeren/rollout-workspace/Collage/Collages/AboutViewController.swift
 ```
 
+ To remove `sendFeedback` flag and replace it with the `true` value from the entire project:
+` ./tools/flag-removal/remove_flag.sh sendFeedback true`
+
+ To remove `sendFeedback` flag and replace it with the `false` value from the entire project:
+` ./tools/flag-removal/remove_flag.sh sendFeedback flase`
+
+
